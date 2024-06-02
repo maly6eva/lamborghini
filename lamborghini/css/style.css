@@ -50,14 +50,53 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    background: linear-gradient(180deg, #D8D4CA 0%, rgba(217, 217, 217, 0.00) 100%);
+    background: linear-gradient(180deg, #b0af1a 0%, rgba(217, 217, 217, 0.00) 100%);
 
 }
 
-.nav {
+.nuv {
     display: flex;
     justify-content: space-between;
+        overflow: hidden;
+        border: 1px solid #418030;
+        background-color: #46703a;
+
+
 }
+.nuv button{
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+.nuv button:hover {
+    background-color: #f3f006;
+}
+
+/* Create an active/current tablink class */
+.nuv button.active {
+    background-color: #9b9916;
+}
+.nuvcontent {
+    display: none;
+    padding: 6px 12px;
+    /*border: 1px solid #d9d9b4;*/
+    border-top: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.nuvlinks {
+    font-family: 'Impact', sans-serif;
+    font-size: 18px;
+
+}
+
 
 .menu-left {
     padding-left: 25px;
@@ -72,10 +111,13 @@ body {
     padding-top: 25px;
 }
 
-.menu-link  {
-    color: #363636;
-    font-size: 16px;
-}
+/*.menu-link  {*/
+/*    color: #363636;*/
+/*    font-size: 16px;*/
+/*}*/
+
+
+
 
 .promo {
 
@@ -90,7 +132,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 210px;
 
 }
 
@@ -105,7 +147,7 @@ body {
     font-family: 'Impact', sans-serif;
     font-weight: 400;
     font-size: 48px;
-    border-bottom: 1px solid #040404;
+    border-bottom: 1px solid #2d651d;
     margin-bottom: 10px;
     align-self: center;
 }
@@ -576,7 +618,7 @@ iframe {
         padding-top: 140px;
     }
     .menu-link {
-        color: #ffffff;
+        color: #9f2d2d;
         font-size: 3vh;
         display: block;
         padding: 20px 0;
@@ -707,8 +749,6 @@ iframe {
     }
 
 }
-
-
 
 
 

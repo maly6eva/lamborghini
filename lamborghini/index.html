@@ -1,416 +1,413 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Inter+Tight:wght@400;700&family=Inter:wght@400;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Inter+Tight:wght@400;700&family=Inter:wght@400;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
 <header class="header">
-  <div class="big-container">
-    <nav class="nav">
-      <ul class="menu-list menu-left">
-        <li class="menu-item">
-          <a  class="menu-link" href="#">О гонке</a>
-        </li>
-        <li class="menu-item">
-          <a  class="menu-link" href="#">Трек</a>
-        </li>
-        <li class="menu-item">
-          <a  class="menu-link" href="#">Lamborghini Super trofeo</a>
-        </li>
-        <li class="menu-item">
-          <a  class="menu-link" href="#">Новости</a>
-        </li>
-      </ul>
-      <a class="logo" href="#">
-        <img src="images/logo.svg" alt="logo" class="logo-img">
-      </a>
-      <ul class="menu-list menu-right">
-        <li class="menu-item">
-          <a  class="menu-link" href="#">Купить билеты</a>
-        </li>
-        <li class="menu-item">
-          <a  class="menu-link" href="#">Смотреть онлайн</a>
-        </li>
-        <li class="menu-item">
-          <a  class="menu-link" href="#">Контакты</a>
-        </li>
-      </ul>
-
-<button class="menu-btn">
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
-
-
-      <ul class="menu-mobile">
-        <li class="menu-item">
-          <a  class="menu-link" href="#">О гонке</a>
-        </li>
-        <li class="menu-item">
-          <a  class="menu-link" href="#">Трек</a>
-        </li>
-        <li class="menu-item">
-          <a  class="menu-link" href="#">Lamborghini Super trofeo</a>
-        </li>
-        <li class="menu-item">
-          <a  class="menu-link" href="#">Новости</a>
-        </li>
-
-        <li class="menu-item">
-          <a  class="menu-link" href="#">Купить билеты</a>
-        </li>
-        <li class="menu-item">
-          <a  class="menu-link" href="#">Смотреть онлайн</a>
-        </li>
-        <li class="menu-item">
-          <a  class="menu-link" href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<main class="main">
-  <section class="promo">
     <div class="big-container">
-      <div class="promo__inner">
-        <h1 class="title">LAMBORGHINI SUPER TROFEO</h1>
-        <h2 class="subtitle">Гранд-финал 2022</h2>
-        <span class="sub">3-6 ноября</span>
-        <p class="promo__text">автодром Портимао,Португалия</p>
-        <a  class="promo__arrow" href="#">
-          <img src="images/card.svg" alt="лого">
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="info">
-    <div class="container">
-      <div class="info__part info__part--first">
-        <h3 class="info__title">СУПЕР ТРОФЕО МИРОВОЙ ФИНАЛ</h3>
-        <div class="info__part-textbox">
-          <p class="info__text">
-            Мировой финал Lamborghini завершает каждый сезон Super Trofeo с 2013 года. Каждый год гонщики всех континентальных чемпионатов отправляются на разные трассы и принимают участие в двух 50-минутных спринтерских гонках, где определяется победитель в общем зачете. как чемпион мира Lamborghini. Мировой финал Lamborghini — это не только крупнейший гоночный уик-энд года, но и настоящий фестиваль автоспорта, который привлекает поклонников со всего мира.
-          </p>
-          <b class="info__text">
-            Парад владельцев, превью и развлечения в паддоке для болельщиков — это лишь некоторые из мероприятий, организованных в рамках мероприятия.
-          </b>
+        <div class="nuv">
+            <div class="menu-list menu-left">
+                <button class="nuvlinks" onclick="openCity(event, 'gonka')">О гонке</button>
+                <button class="nuvlinks" onclick="openCity(event, 'trek')">Трек</button>
+                <button class="nuvlinks" onclick="openCity(event, 'lamborghini')">Lamborghini Super trofeo</button>
+                <button class="nuvlinks" onclick="openCity(event, 'novosti')">Новости</button>
+            </div>
+            <a class="logo" href="#">
+                <img src="images/logo.svg" alt="logo" class="logo-img">
+            </a>
+            <div class="menu-list menu-right">
+                <button class="nuvlinks" onclick="openCity(event, 'bilit')">Купить билеты</button>
+                <button class="nuvlinks" onclick="openCity(event, 'smotret')">Смотреть онлайн</button>
+                <button class="nuvlinks" onclick="openCity(event, 'kontakt')">Контакты</button>
+            </div>
         </div>
-        <img class="info__part-img" src="images/info_1.jpg" alt="">
-      </div>
-      <div class="info__part info__part--second">
-        <div class="info__content">
-          <h3 class="info__title">
-            КОМАНДЫ СУПЕР ТРОФЕО
-          </h3>
-          <p class="info_text_1">
-            Все автомобили, которые участвуют в чемпионатах Lamborghini Super Trofeo, управляются частными командами, которые используют свой опыт для тонкой настройки их для водителей. Для каждого континентального чемпионата Lamborghini Super Trofeo существуют рейтинги пилотов и команд.
-          </p>
-          <p class="info_text">
-            Пилоты и команды, участвующие в континентальной серии, каждый год соревнуются друг с другом в Гранд Финале Lamborghini, мероприятии, которое завершает спортивный сезон Super Trofeo. Две квалификационные сессии и две гонки определяют чемпионов мира серии. Каждый год Гранд-финал проводится на разных трассах, и в прошлых выпусках он уже затрагивал европейский, азиатский и американский континенты.
-          </p>
+
+
+        <!-- Tab content -->
+        <div id="gonka" class="nuvcontent">
+            <h3>О гонке</h3>
+            <p>На следующей неделе мы встречаемся на совместном просмотре Гран-При Канады, 9-го этапа сезона 2024 года
+                Чемпионата мира Формулы 1, который я буду комментировать в ПАРИ ПАБe в центре Москвы!</p>
         </div>
-        <img class="info__part-img" src="images/info_2.jpg" alt="">
-
-      </div>
-      <div class="info__part info__part--third">
-        <div class="info__content">
-          <h3 class="info__title">
-            календарь сезона Super Trofeo Europe 2022 года
-          </h3>
-          <p class="info_text">
-            14 в истории серии GT, посвященный автомобилям Lamborghini Huracan Super Trofeo Evo. Шесть этапов, в общей сложности 12 гонок и 600 минут соревнований будут разыграны на некоторых из самых престижных трасс Европы.
-          </p>
+        <div id="trek" class="nuvcontent">
+            <h3>Трек</h3>
+            <p>Для того, чтобы отследить, и узнать где находится Ваша посылка, достаточно ввести ее почтовый
+                идентификатор в поле со значком , кликнуть мышкой по кнопке Отследить посылку, и Вы практически
+                мгновенно узнаете, где и когда проходила Ваша посылка, и где находится в данный момент.</p>
         </div>
-        <table class="info__table">
-          <tr>
-            <td>Этап 1: </td>
-            <td>Имола (Италия)</td>
-            <td>1-3 апреля</td>
-          </tr>
-          <tr>
-            <td>Этап 2: </td>
-            <td>Ле-Кастелле (Франция)</td>
-            <td>3–5 июня</td>
-          </tr>
-          <tr>
-            <td>Этап 3: </td>
-            <td>Мизано (Италия)</td>
-            <td>1–3 июля</td>
-          </tr>
-          <tr>
-            <td>Этап 4: </td>
-            <td>Спа-Франкоршам (Бельгия)</td>
-            <td>29–30 июля</td>
-          </tr>
-          <tr>
-            <td>Этап 5: </td>
-            <td>Барселона (Испания)</td>
-            <td>30 сентября–2 октября</td>
-          </tr>
-          <tr>
-            <td>Этап 6: </td>
-            <td>Портимао (Португалия)</td>
-            <td>3-4 ноября</td>
-          </tr>
-          <tr>
-            <td>Гранд-финал 2022 :</td>
-            <td>Портимао (Португалия)</td>
-            <td>5-6 ноября</td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </section>
-  <section class="track">
-    <div class="container">
-      <div class="track__inner">
-      <h3 class="track__title">ТРЕК ПОРТИМАО</h3>
-      <p class="track__text">
-        Autodromo Internacional do Algarve находится в одноименном регионе на юге Португалии, недалеко от города Портиман. Открытый в октябре 2008 года автогоночный комплекс является одним из самых современных в Европе, раскинувшись на площади около 300 гектаров среди холмов, окружающих португальский город, а длина самой трассы составляет 4684 метра.
-      </p>
-      <img class="track__img" src="images/jep.png" alt="">
-
-    </div>
-    </div>
-  </section>
-  <section class="evo">
-    <div class="evo-black">
-      <div class="container">
-        <div class="evo-black__inner">
-          <div class="evo-black__info">
-            <h3 class="evo-black__title">СУПЕР ТРОФЕО ЭВО</h3>
-            <div class="evo-black__infobox">
-              <p class="evo-black__text">
-                Новый Huracán Super Trofeo EVO достигает еще больших высот, чем его прославленный предшественник, благодаря полностью переработанной аэродинамике. Huracán Super Trofeo EVO является идеальной стартовой площадкой для всех водителей, которые хотят начать карьеру в гонках класса GT.
-              </p>
-              <p class="evo-black__text">
-                Huracán EVO — это эволюция самого успешного Lamborghini с двигателем V10. В результате тонкой настройки и усовершенствования существующих функций в сочетании с новыми конструктивными решениями, повышающими производительность, автомобиль выделяется своей способностью предугадывать и удовлетворять поведение, ожидания и желания водителя.
-              </p>
-            </div>
-          </div>
-          <img class="evo-black__img" src="images/evo.png" alt="Huracán Super">
-          <dl class="evo__descr-list">
-            <div>
-              <dd>ПЕРЕМЕЩЕНИЕ</dd>
-              <dt>5204 см³</dt>
-            </div>
-            <div>
-              <dd>КРУТЯЩИЙ МОМЕНТ</dd>
-              <dt>570 Нм при 6500 об/мин</dt>
-            </div>
-            <div>
-              <dd>МОЩНОСТЬ (л.с.) / МОЩНОСТЬ (КВТ)</dd>
-              <dt>620 л.с. при 8250 об/мин</dt>
-            </div>
-            <div>
-              <dd>МАКС. СКОРОСТЬ</dd>
-              <dt> 325 км /ч</dt>
-            </div>
-            <div>
-              <dd>0-100 КМ/Ч</dd>
-              <dt>2,9 с</dt>
-            </div>
-          </dl>
-
+        <div id="lamborghini" class="nuvcontent">
+            <h3>Lamborghini Super trofeo</h3>
+            <p>Automobili Lamborghini S.p.A. — итальянская компания, производитель дорогих спортивных автомобилей под
+                маркой Lamborghini. Находится в коммуне Сант-Агата-Болоньезе, около Болоньи. Компания основана в 1963
+                году Ферруччо Ламборгини</p>
         </div>
-      </div>
+        <div id="novosti" class="nuvcontent">
+            <h3>Новости</h3>
+            <p>Временные ограничения движения по одной полосе для движения в каждом направлении вводятся до 0.00 30 июня. Причина - ремонтные работы на путепроводе МКАД через ул.Шаранговича.</p>
+        </div>
+        <div id="bilit" class="nuvcontent">
+            <h3>Купить билеты</h3>
+            <p>Путешествуйте по всему миру — Купибилет - сайт и приложение для покупки авиабилетов. Дешевые авиабилеты
+                по всему миру. Авиабилеты без комиссии на официальном сайте Купибилет. VIP-статус.</p>
+        </div>
+        <div id="smotret" class="nuvcontent">
+            <h3>Смотреть онлайн</h3>
+            <p>Смотрите на ОРИГИНАЛЬНОМ сайте киного фильмы и сериалы онлайн: огромная кино база kinogo доступна
+                бесплатно!</p>
+        </div>
+        <div id="kontakt" class="nuvcontent">
+            <h3>Контакты</h3>
+            <p>+7 (123) 456-78-90 доб. 221
+            <p>
+            <p> +7 (123) 456-78-90 #221
+            <p>
+            <p>+1-1234567890 ext. 221</p>
+        </div>
     </div>
+    </header>
 
-    <div class="evo-white">
-      <div class="container">
-        <div class="evo-white__inner">
-          <p class="evo-white__text">
-            Его неповторимый дизайн — это естественная эволюция культовых линий Huracán, включающая новые сложные решения, поднимающие производительность и вызывающие эмоции на невиданный ранее уровень.
-          </p>
-          <p class="evo-white__text">
-            Беспрецедентный обвес был разработан инженерами отдела автоспорта Automobili Lamborghini в сотрудничестве с Dallara Engineering и Lamborghini Centro Stile. Последний также разработал стартовую ливрею для автомобиля в честь партнерства между Lamborghini Squadra Corse и Roger Dubuis, которое началось в 2018 году.
-          </p>
-          <p class="evo-white__text">
-            Среди наиболее очевидных изменений в обвесе Lamborghini Huracan Super Trofeo EVO — задний спойлер на заднем капоте и верхний воздухозаборник, которые делают его мгновенно узнаваемым для зрителей.
-          </p>
-          <div class="evo-white__video">
-            <a class="evo-white__video-link" href="#">
-              <img src="images/icon_8.svg" alt="">
-              <span>смотреть онлайн</span>
-              
+    <main class="main">
+      <section class="promo">
+        <div class="big-container">
+          <div class="promo__inner">
+            <h1 class="title">LAMBORGHINI SUPER TROFEO</h1>
+            <h2 class="subtitle">Гранд-финал 2022</h2>
+            <span class="sub">3-6 ноября</span>
+            <p class="promo__text">автодром Портимао,Португалия</p>
+            <a  class="promo__arrow" href="#">
+              <img src="images/card.svg" alt="лого">
             </a>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="block">
-    <div class="container">
-      <h3 class="blog__title">БЛОГ</h3>
-      <div class="blog__slider swiper">
+      </section>
 
-        <div class="swiper-wrapper">
-            <div class="swiper-slide blog__item">
-              <img  class="blog__item-img" src="images/blog_1.jpg" alt="">
-              <h4 class="blog__item-title">
-                НЕЛЬСОН ПИКЕ СТАЛ ПОБЕДИТЕЛЕМ ГРАНД-ФИНАЛА В ПОРТИМАНЕ
-              </h4>
-              <p class="blog__item-text">
-                Нельсон Пике-младший из Ansa Motorsports обеспечил возвращение титула Lamborghini Super Trofeo Grand Finals в Северную Америку впервые с 2017 года после победы и второе место в паре 50-минутных гонок на Autodromo Nacionale do Algarve в Портимане.Между тем, титул Pro-Am был подорван, поскольку Брайан Ортис и Себастьян Карасо из Precision Performance Motorsports стали первым полностью пуэрто-риканским составом, выигравшим Гранд-финал, сделав это драматично после того, как сравнялись по очкам с Брайсон Лью и Джон Дубетс.Анджей Левандовски из VS Racing одержал свою вторую победу в Гранд-финале, добавив титул Am к своему успеху Pro-Am, которого он добился с Каролем Башем в 2019 году, в то время как бельгийские братья и сестры Бенуа и Франсуа Семулен завоевали корону Кубка Lamborghini для Semspeed.Победитель Гранд-финала в категории Pro Нельсон Пике-младший (#130 Ansa Motorsports) сказал: « Выиграть титул удивительно, но это определенно была непростая гонка. Я попросил своего инженера еще немного стравить давление в шинах на пит-стопе, но этого оказалось недостаточно, поэтому на втором отрезке у меня были проблемы. Я видел, как приближается Дэнни [Формал] [Wayne Taylor Racing] и немного волновался, потому что он мог что-то попробовать, потому что ему было нечего терять. Я знал, что этой секунды было бы достаточно, чтобы выиграть титул, но всегда хочется сделать это, выиграв гонку».
+      <section class="info">
+        <div class="container">
+          <div class="info__part info__part--first">
+            <h3 class="info__title">СУПЕР ТРОФЕО МИРОВОЙ ФИНАЛ</h3>
+            <div class="info__part-textbox">
+              <p class="info__text">
+                Мировой финал Lamborghini завершает каждый сезон Super Trofeo с 2013 года. Каждый год гонщики всех континентальных чемпионатов отправляются на разные трассы и принимают участие в двух 50-минутных спринтерских гонках, где определяется победитель в общем зачете. как чемпион мира Lamborghini. Мировой финал Lamborghini — это не только крупнейший гоночный уик-энд года, но и настоящий фестиваль автоспорта, который привлекает поклонников со всего мира.
               </p>
-              <a  class="blog__item-link" href="#">читать подробнее...</a>
+              <b class="info__text">
+                Парад владельцев, превью и развлечения в паддоке для болельщиков — это лишь некоторые из мероприятий, организованных в рамках мероприятия.
+              </b>
             </div>
-
-            <div class="swiper-slide blog__item">
-              <img  class="blog__item-img" src="images/blog_2.jpg" alt="">
-              <h4 class="blog__item-title">
-                ГРАНД ФИНАЛ. ДЕНЬ 1
-              </h4>
-              <p class="blog__item-text">
-                Утренний дождь означал, что мокрая гонка была объявлена ​​до старта, и перед большинством экипажей стоял выбор: использовать слики или мокрые шины. Большинство участников предпочли мокрую трассу, но поулист Спинелли начал гонку на сликах и сразу же поплатился за это. Huracan № 61 опустился вниз, заняв всего 28-е место, поскольку Бондуэль опередил бегунов Pro-Am Кароля Баша (Micanek Motorsport) и Льюиса Уильямсона (Oregon Team).Вскоре Уильямсон опередил Баса, заняв первое место в Pro-Am и заняв второе место в общем зачете, но гонщик команды Орегона не был доволен тем, что остался на этом месте, поскольку он отнимал у Бондюэля часть времени впереди. Вскоре Уильямсон оказался позади Бондюэля и сделал решающий рывок на восьмом повороте, чтобы захватить лидерство на седьмом круге. Таков был темп машины под номером 27, Уильямсон построил трехсекундный отрыв и удерживал лидерство до пит-стопов.Бондуэль, который боролся с высоким давлением в шинах на первом отрезке, перешел на слики на пит-стопах и снова вышел в лидеры после того, как обогнал Бромека Форманека, в то время как автомобиль Target Racing из Milan Teekens оспаривал третье место с машиной Iron Dames. Дориан Пин. Пин № 83 поднялся на второе место перед Тикенсом после остановок, но в конце гонки попал под давление со стороны Тикенса. Teekens обогнал Пина на последних кругах и финишировал вторым после вращения Форманека за два круга до финиша, в то время как Пин также развернулся на последнем круге и занял пятое место в общем зачете.Получив прибыль от вращения Форманека, Сиглия и Уильямсон финишировали третьими в общем зачете и первыми в Pro-Am, завоевав титул на гонку раньше. Бенуа Семулен и Франсуа Семулен выиграли в классе Lamborghini Cup, опередив Ван дер Хорста и Ханса Фабри, а Левандовски одержал победу в классе Am.
+            <img class="info__part-img" src="images/info_1.jpg" alt="">
+          </div>
+          <div class="info__part info__part--second">
+            <div class="info__content">
+              <h3 class="info__title">
+                КОМАНДЫ СУПЕР ТРОФЕО
+              </h3>
+              <p class="info_text_1">
+                Все автомобили, которые участвуют в чемпионатах Lamborghini Super Trofeo, управляются частными командами, которые используют свой опыт для тонкой настройки их для водителей. Для каждого континентального чемпионата Lamborghini Super Trofeo существуют рейтинги пилотов и команд.
               </p>
-              <a  class="blog__item-link" href="#">читать подробнее...</a>
+              <p class="info_text">
+                Пилоты и команды, участвующие в континентальной серии, каждый год соревнуются друг с другом в Гранд Финале Lamborghini, мероприятии, которое завершает спортивный сезон Super Trofeo. Две квалификационные сессии и две гонки определяют чемпионов мира серии. Каждый год Гранд-финал проводится на разных трассах, и в прошлых выпусках он уже затрагивал европейский, азиатский и американский континенты.
+              </p>
             </div>
-          <div class="swiper-slide blog__item">
-            <img  class="blog__item-img" src="images/blog_1.jpg" alt="">
-            <h4 class="blog__item-title">
-              НЕЛЬСОН ПИКЕ СТАЛ ПОБЕДИТЕЛЕМ ГРАНД-ФИНАЛА В ПОРТИМАНЕ
-            </h4>
-            <p class="blog__item-text">
-              Нельсон Пике-младший из Ansa Motorsports обеспечил возвращение титула Lamborghini Super Trofeo Grand Finals в Северную Америку впервые с 2017 года после победы и второе место в паре 50-минутных гонок на Autodromo Nacionale do Algarve в Портимане.Между тем, титул Pro-Am был подорван, поскольку Брайан Ортис и Себастьян Карасо из Precision Performance Motorsports стали первым полностью пуэрто-риканским составом, выигравшим Гранд-финал, сделав это драматично после того, как сравнялись по очкам с Брайсон Лью и Джон Дубетс.Анджей Левандовски из VS Racing одержал свою вторую победу в Гранд-финале, добавив титул Am к своему успеху Pro-Am, которого он добился с Каролем Башем в 2019 году, в то время как бельгийские братья и сестры Бенуа и Франсуа Семулен завоевали корону Кубка Lamborghini для Semspeed.Победитель Гранд-финала в категории Pro Нельсон Пике-младший (#130 Ansa Motorsports) сказал: « Выиграть титул удивительно, но это определенно была непростая гонка. Я попросил своего инженера еще немного стравить давление в шинах на пит-стопе, но этого оказалось недостаточно, поэтому на втором отрезке у меня были проблемы. Я видел, как приближается Дэнни [Формал] [Wayne Taylor Racing] и немного волновался, потому что он мог что-то попробовать, потому что ему было нечего терять. Я знал, что этой секунды было бы достаточно, чтобы выиграть титул, но всегда хочется сделать это, выиграв гонку».
-            </p>
-            <a  class="blog__item-link" href="#">читать подробнее...</a>
-          </div>
+            <img class="info__part-img" src="images/info_2.jpg" alt="">
 
-          <div class="swiper-slide blog__item">
-            <img  class="blog__item-img" src="images/blog_2.jpg" alt="">
-            <h4 class="blog__item-title">
-              ГРАНД ФИНАЛ. ДЕНЬ 1
-            </h4>
-            <p class="blog__item-text">
-              Утренний дождь означал, что мокрая гонка была объявлена ​​до старта, и перед большинством экипажей стоял выбор: использовать слики или мокрые шины. Большинство участников предпочли мокрую трассу, но поулист Спинелли начал гонку на сликах и сразу же поплатился за это. Huracan № 61 опустился вниз, заняв всего 28-е место, поскольку Бондуэль опередил бегунов Pro-Am Кароля Баша (Micanek Motorsport) и Льюиса Уильямсона (Oregon Team).Вскоре Уильямсон опередил Баса, заняв первое место в Pro-Am и заняв второе место в общем зачете, но гонщик команды Орегона не был доволен тем, что остался на этом месте, поскольку он отнимал у Бондюэля часть времени впереди. Вскоре Уильямсон оказался позади Бондюэля и сделал решающий рывок на восьмом повороте, чтобы захватить лидерство на седьмом круге. Таков был темп машины под номером 27, Уильямсон построил трехсекундный отрыв и удерживал лидерство до пит-стопов.Бондуэль, который боролся с высоким давлением в шинах на первом отрезке, перешел на слики на пит-стопах и снова вышел в лидеры после того, как обогнал Бромека Форманека, в то время как автомобиль Target Racing из Milan Teekens оспаривал третье место с машиной Iron Dames. Дориан Пин. Пин № 83 поднялся на второе место перед Тикенсом после остановок, но в конце гонки попал под давление со стороны Тикенса. Teekens обогнал Пина на последних кругах и финишировал вторым после вращения Форманека за два круга до финиша, в то время как Пин также развернулся на последнем круге и занял пятое место в общем зачете.Получив прибыль от вращения Форманека, Сиглия и Уильямсон финишировали третьими в общем зачете и первыми в Pro-Am, завоевав титул на гонку раньше. Бенуа Семулен и Франсуа Семулен выиграли в классе Lamborghini Cup, опередив Ван дер Хорста и Ханса Фабри, а Левандовски одержал победу в классе Am.
-            </p>
-            <a  class="blog__item-link" href="#">читать подробнее...</a>
           </div>
+          <div class="info__part info__part--third">
+            <div class="info__content">
+              <h3 class="info__title">
+                календарь сезона Super Trofeo Europe 2022 года
+              </h3>
+              <p class="info_text">
+                14 в истории серии GT, посвященный автомобилям Lamborghini Huracan Super Trofeo Evo. Шесть этапов, в общей сложности 12 гонок и 600 минут соревнований будут разыграны на некоторых из самых престижных трасс Европы.
+              </p>
+            </div>
+            <table class="info__table">
+              <tr>
+                <td>Этап 1: </td>
+                <td>Имола (Италия)</td>
+                <td>1-3 апреля</td>
+              </tr>
+              <tr>
+                <td>Этап 2: </td>
+                <td>Ле-Кастелле (Франция)</td>
+                <td>3–5 июня</td>
+              </tr>
+              <tr>
+                <td>Этап 3: </td>
+                <td>Мизано (Италия)</td>
+                <td>1–3 июля</td>
+              </tr>
+              <tr>
+                <td>Этап 4: </td>
+                <td>Спа-Франкоршам (Бельгия)</td>
+                <td>29–30 июля</td>
+              </tr>
+              <tr>
+                <td>Этап 5: </td>
+                <td>Барселона (Испания)</td>
+                <td>30 сентября–2 октября</td>
+              </tr>
+              <tr>
+                <td>Этап 6: </td>
+                <td>Портимао (Португалия)</td>
+                <td>3-4 ноября</td>
+              </tr>
+              <tr>
+                <td>Гранд-финал 2022 :</td>
+                <td>Портимао (Португалия)</td>
+                <td>5-6 ноября</td>
+              </tr>
+            </table>
           </div>
-
-          <div class="blog__button swiper-button-left">
-            <img src="images/arrow-left.svg" alt="">
-          </div>
-          <div class="blog__button swiper-button-right">
-            <img src="images/arrow-right.svg" alt="">
-          </div>
-      </div>
-
-
-    <div class="blog__quote">
-      <div class="blog__quote-box">
-        <blockquote class="blockquote">
-          <cite class="blockquote__name">
-            <span>Чемпион Am</span>
-            Анджей Левандовски
-          </cite>
-          <p class="blockquote__text">
-            «Я очень доволен титулом, моей второй победой в Am и четвертой в Super Trofeo, мне очень приятно делать это в этом году, потому что уровень соревнований очень высок. Должен сказать, сегодня было довольно легко, так как я все время контролировал ситуацию».
+        </div>
+      </section>
+      <section class="track">
+        <div class="container">
+          <div class="track__inner">
+          <h3 class="track__title">ТРЕК ПОРТИМАО</h3>
+          <p class="track__text">
+            Autodromo Internacional do Algarve находится в одноименном регионе на юге Португалии, недалеко от города Портиман. Открытый в октябре 2008 года автогоночный комплекс является одним из самых современных в Европе, раскинувшись на площади около 300 гектаров среди холмов, окружающих португальский город, а длина самой трассы составляет 4684 метра.
           </p>
-        </blockquote>
-        <blockquote class="blockquote">
-          <cite class="blockquote__name">
-            <span>Обладатель кубка Lamborghini</span>
-            Жерар ван дер Хорст
-          </cite>
-          <p class="blockquote__text">
-            «Я очень доволен титулом, моей второй победой в Am и четвертой в Super Trofeo, мне очень приятно делать это в этом году, потому что уровень соревнований очень высок. Должен Обладатель кубка Lamborghini  добавил: «Здорово выиграть титул, спустя четыре года после последнего, а за это время произошло так много всего. Из-за COVID-19, а затем моей тяжелой аварии в Барселоне я не мог так много ездить в последние годы, поэтому я очень доволен своим возвращением. Сегодня утром была тяжелая гонка, но я справился».
-            сказать, сегодня было довольно легко, так как я все время контролировал ситуацию».
-          </p>
-        </blockquote>
-      </div>
-      <img src="images/quote.png" alt="" class="blog__quote-img">
-    </div>
-    </div>
-  </section>
-</main>
+          <img class="track__img" src="images/jep.png" alt="">
 
-<footer class="footer">
-  <div class="container">
-    <h3 class="footer__title">
-      Контакты
-    </h3>
-    <div class="footer__top">
-      <ul class="footer__info">
-        <li class="footer__info-item">
-          <dl>
-            <dt>ОБЩИЕ</dt>
-            <dd><a href="tel:+351282405600">+(351) 282 405 600</a></dd>
-            <dd><a href="tel:+351282405697"></a>+(351) 282 405 697</dd>
-            <dd><a href="mailto:info@autodromodoalgarve.com">info@autodromodoalgarve.com</a></dd>
-          </dl>
-        </li>
-        <li class="footer__info-item">
-          <dl>
-          <dt>БИЛЕТЫ</dt>
-          <dd><a href="tel:+351282405600">+(351) 282 405 600</a></dd>
-          <dd><a href="mailto:tickets@autodromodoalgarve.com">tickets@autodromodoalgarve.com</a></dd>
-        </dl>
-        </li>
-        <li class="footer__info-item">
-          <ul class="social-list">
-            <li class="social-list__item">
-              <a class="social-list__link" href="#">
-                <img class="social-list__icon" src="images/youtube.svg" alt="" >
-              </a>
+        </div>
+        </div>
+      </section>
+      <section class="evo">
+        <div class="evo-black">
+          <div class="container">
+            <div class="evo-black__inner">
+              <div class="evo-black__info">
+                <h3 class="evo-black__title">СУПЕР ТРОФЕО ЭВО</h3>
+                <div class="evo-black__infobox">
+                  <p class="evo-black__text">
+                    Новый Huracán Super Trofeo EVO достигает еще больших высот, чем его прославленный предшественник, благодаря полностью переработанной аэродинамике. Huracán Super Trofeo EVO является идеальной стартовой площадкой для всех водителей, которые хотят начать карьеру в гонках класса GT.
+                  </p>
+                  <p class="evo-black__text">
+                    Huracán EVO — это эволюция самого успешного Lamborghini с двигателем V10. В результате тонкой настройки и усовершенствования существующих функций в сочетании с новыми конструктивными решениями, повышающими производительность, автомобиль выделяется своей способностью предугадывать и удовлетворять поведение, ожидания и желания водителя.
+                  </p>
+                </div>
+              </div>
+              <img class="evo-black__img" src="images/evo.png" alt="Huracán Super">
+              <dl class="evo__descr-list">
+                <div>
+                  <dd>ПЕРЕМЕЩЕНИЕ</dd>
+                  <dt>5204 см³</dt>
+                </div>
+                <div>
+                  <dd>КРУТЯЩИЙ МОМЕНТ</dd>
+                  <dt>570 Нм при 6500 об/мин</dt>
+                </div>
+                <div>
+                  <dd>МОЩНОСТЬ (л.с.) / МОЩНОСТЬ (КВТ)</dd>
+                  <dt>620 л.с. при 8250 об/мин</dt>
+                </div>
+                <div>
+                  <dd>МАКС. СКОРОСТЬ</dd>
+                  <dt> 325 км /ч</dt>
+                </div>
+                <div>
+                  <dd>0-100 КМ/Ч</dd>
+                  <dt>2,9 с</dt>
+                </div>
+              </dl>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="evo-white">
+          <div class="container">
+            <div class="evo-white__inner">
+              <p class="evo-white__text">
+                Его неповторимый дизайн — это естественная эволюция культовых линий Huracán, включающая новые сложные решения, поднимающие производительность и вызывающие эмоции на невиданный ранее уровень.
+              </p>
+              <p class="evo-white__text">
+                Беспрецедентный обвес был разработан инженерами отдела автоспорта Automobili Lamborghini в сотрудничестве с Dallara Engineering и Lamborghini Centro Stile. Последний также разработал стартовую ливрею для автомобиля в честь партнерства между Lamborghini Squadra Corse и Roger Dubuis, которое началось в 2018 году.
+              </p>
+              <p class="evo-white__text">
+                Среди наиболее очевидных изменений в обвесе Lamborghini Huracan Super Trofeo EVO — задний спойлер на заднем капоте и верхний воздухозаборник, которые делают его мгновенно узнаваемым для зрителей.
+              </p>
+              <div class="evo-white__video">
+                <a class="evo-white__video-link" href="#">
+                  <img src="images/icon_8.svg" alt="">
+                  <span>смотреть онлайн</span>
+
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="block">
+        <div class="container">
+          <h3 class="blog__title">БЛОГ</h3>
+          <div class="blog__slider swiper">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide blog__item">
+                  <img  class="blog__item-img" src="images/blog_1.jpg" alt="">
+                  <h4 class="blog__item-title">
+                    НЕЛЬСОН ПИКЕ СТАЛ ПОБЕДИТЕЛЕМ ГРАНД-ФИНАЛА В ПОРТИМАНЕ
+                  </h4>
+                  <p class="blog__item-text">
+                    Нельсон Пике-младший из Ansa Motorsports обеспечил возвращение титула Lamborghini Super Trofeo Grand Finals в Северную Америку впервые с 2017 года после победы и второе место в паре 50-минутных гонок на Autodromo Nacionale do Algarve в Портимане.Между тем, титул Pro-Am был подорван, поскольку Брайан Ортис и Себастьян Карасо из Precision Performance Motorsports стали первым полностью пуэрто-риканским составом, выигравшим Гранд-финал, сделав это драматично после того, как сравнялись по очкам с Брайсон Лью и Джон Дубетс.Анджей Левандовски из VS Racing одержал свою вторую победу в Гранд-финале, добавив титул Am к своему успеху Pro-Am, которого он добился с Каролем Башем в 2019 году, в то время как бельгийские братья и сестры Бенуа и Франсуа Семулен завоевали корону Кубка Lamborghini для Semspeed.Победитель Гранд-финала в категории Pro Нельсон Пике-младший (#130 Ansa Motorsports) сказал: « Выиграть титул удивительно, но это определенно была непростая гонка. Я попросил своего инженера еще немного стравить давление в шинах на пит-стопе, но этого оказалось недостаточно, поэтому на втором отрезке у меня были проблемы. Я видел, как приближается Дэнни [Формал] [Wayne Taylor Racing] и немного волновался, потому что он мог что-то попробовать, потому что ему было нечего терять. Я знал, что этой секунды было бы достаточно, чтобы выиграть титул, но всегда хочется сделать это, выиграв гонку».
+                  </p>
+                  <a  class="blog__item-link" href="#">читать подробнее...</a>
+                </div>
+
+                <div class="swiper-slide blog__item">
+                  <img  class="blog__item-img" src="images/blog_2.jpg" alt="">
+                  <h4 class="blog__item-title">
+                    ГРАНД ФИНАЛ. ДЕНЬ 1
+                  </h4>
+                  <p class="blog__item-text">
+                    Утренний дождь означал, что мокрая гонка была объявлена ​​до старта, и перед большинством экипажей стоял выбор: использовать слики или мокрые шины. Большинство участников предпочли мокрую трассу, но поулист Спинелли начал гонку на сликах и сразу же поплатился за это. Huracan № 61 опустился вниз, заняв всего 28-е место, поскольку Бондуэль опередил бегунов Pro-Am Кароля Баша (Micanek Motorsport) и Льюиса Уильямсона (Oregon Team).Вскоре Уильямсон опередил Баса, заняв первое место в Pro-Am и заняв второе место в общем зачете, но гонщик команды Орегона не был доволен тем, что остался на этом месте, поскольку он отнимал у Бондюэля часть времени впереди. Вскоре Уильямсон оказался позади Бондюэля и сделал решающий рывок на восьмом повороте, чтобы захватить лидерство на седьмом круге. Таков был темп машины под номером 27, Уильямсон построил трехсекундный отрыв и удерживал лидерство до пит-стопов.Бондуэль, который боролся с высоким давлением в шинах на первом отрезке, перешел на слики на пит-стопах и снова вышел в лидеры после того, как обогнал Бромека Форманека, в то время как автомобиль Target Racing из Milan Teekens оспаривал третье место с машиной Iron Dames. Дориан Пин. Пин № 83 поднялся на второе место перед Тикенсом после остановок, но в конце гонки попал под давление со стороны Тикенса. Teekens обогнал Пина на последних кругах и финишировал вторым после вращения Форманека за два круга до финиша, в то время как Пин также развернулся на последнем круге и занял пятое место в общем зачете.Получив прибыль от вращения Форманека, Сиглия и Уильямсон финишировали третьими в общем зачете и первыми в Pro-Am, завоевав титул на гонку раньше. Бенуа Семулен и Франсуа Семулен выиграли в классе Lamborghini Cup, опередив Ван дер Хорста и Ханса Фабри, а Левандовски одержал победу в классе Am.
+                  </p>
+                  <a  class="blog__item-link" href="#">читать подробнее...</a>
+                </div>
+              <div class="swiper-slide blog__item">
+                <img  class="blog__item-img" src="images/blog_1.jpg" alt="">
+                <h4 class="blog__item-title">
+                  НЕЛЬСОН ПИКЕ СТАЛ ПОБЕДИТЕЛЕМ ГРАНД-ФИНАЛА В ПОРТИМАНЕ
+                </h4>
+                <p class="blog__item-text">
+                  Нельсон Пике-младший из Ansa Motorsports обеспечил возвращение титула Lamborghini Super Trofeo Grand Finals в Северную Америку впервые с 2017 года после победы и второе место в паре 50-минутных гонок на Autodromo Nacionale do Algarve в Портимане.Между тем, титул Pro-Am был подорван, поскольку Брайан Ортис и Себастьян Карасо из Precision Performance Motorsports стали первым полностью пуэрто-риканским составом, выигравшим Гранд-финал, сделав это драматично после того, как сравнялись по очкам с Брайсон Лью и Джон Дубетс.Анджей Левандовски из VS Racing одержал свою вторую победу в Гранд-финале, добавив титул Am к своему успеху Pro-Am, которого он добился с Каролем Башем в 2019 году, в то время как бельгийские братья и сестры Бенуа и Франсуа Семулен завоевали корону Кубка Lamborghini для Semspeed.Победитель Гранд-финала в категории Pro Нельсон Пике-младший (#130 Ansa Motorsports) сказал: « Выиграть титул удивительно, но это определенно была непростая гонка. Я попросил своего инженера еще немного стравить давление в шинах на пит-стопе, но этого оказалось недостаточно, поэтому на втором отрезке у меня были проблемы. Я видел, как приближается Дэнни [Формал] [Wayne Taylor Racing] и немного волновался, потому что он мог что-то попробовать, потому что ему было нечего терять. Я знал, что этой секунды было бы достаточно, чтобы выиграть титул, но всегда хочется сделать это, выиграв гонку».
+                </p>
+                <a  class="blog__item-link" href="#">читать подробнее...</a>
+              </div>
+
+              <div class="swiper-slide blog__item">
+                <img  class="blog__item-img" src="images/blog_2.jpg" alt="">
+                <h4 class="blog__item-title">
+                  ГРАНД ФИНАЛ. ДЕНЬ 1
+                </h4>
+                <p class="blog__item-text">
+                  Утренний дождь означал, что мокрая гонка была объявлена ​​до старта, и перед большинством экипажей стоял выбор: использовать слики или мокрые шины. Большинство участников предпочли мокрую трассу, но поулист Спинелли начал гонку на сликах и сразу же поплатился за это. Huracan № 61 опустился вниз, заняв всего 28-е место, поскольку Бондуэль опередил бегунов Pro-Am Кароля Баша (Micanek Motorsport) и Льюиса Уильямсона (Oregon Team).Вскоре Уильямсон опередил Баса, заняв первое место в Pro-Am и заняв второе место в общем зачете, но гонщик команды Орегона не был доволен тем, что остался на этом месте, поскольку он отнимал у Бондюэля часть времени впереди. Вскоре Уильямсон оказался позади Бондюэля и сделал решающий рывок на восьмом повороте, чтобы захватить лидерство на седьмом круге. Таков был темп машины под номером 27, Уильямсон построил трехсекундный отрыв и удерживал лидерство до пит-стопов.Бондуэль, который боролся с высоким давлением в шинах на первом отрезке, перешел на слики на пит-стопах и снова вышел в лидеры после того, как обогнал Бромека Форманека, в то время как автомобиль Target Racing из Milan Teekens оспаривал третье место с машиной Iron Dames. Дориан Пин. Пин № 83 поднялся на второе место перед Тикенсом после остановок, но в конце гонки попал под давление со стороны Тикенса. Teekens обогнал Пина на последних кругах и финишировал вторым после вращения Форманека за два круга до финиша, в то время как Пин также развернулся на последнем круге и занял пятое место в общем зачете.Получив прибыль от вращения Форманека, Сиглия и Уильямсон финишировали третьими в общем зачете и первыми в Pro-Am, завоевав титул на гонку раньше. Бенуа Семулен и Франсуа Семулен выиграли в классе Lamborghini Cup, опередив Ван дер Хорста и Ханса Фабри, а Левандовски одержал победу в классе Am.
+                </p>
+                <a  class="blog__item-link" href="#">читать подробнее...</a>
+              </div>
+              </div>
+
+              <div class="blog__button swiper-button-left">
+                <img src="images/arrow-left.svg" alt="">
+              </div>
+              <div class="blog__button swiper-button-right">
+                <img src="images/arrow-right.svg" alt="">
+              </div>
+          </div>
+
+
+        <div class="blog__quote">
+          <div class="blog__quote-box">
+            <blockquote class="blockquote">
+              <cite class="blockquote__name">
+                <span>Чемпион Am</span>
+                Анджей Левандовски
+              </cite>
+              <p class="blockquote__text">
+                «Я очень доволен титулом, моей второй победой в Am и четвертой в Super Trofeo, мне очень приятно делать это в этом году, потому что уровень соревнований очень высок. Должен сказать, сегодня было довольно легко, так как я все время контролировал ситуацию».
+              </p>
+            </blockquote>
+            <blockquote class="blockquote">
+              <cite class="blockquote__name">
+                <span>Обладатель кубка Lamborghini</span>
+                Жерар ван дер Хорст
+              </cite>
+              <p class="blockquote__text">
+                «Я очень доволен титулом, моей второй победой в Am и четвертой в Super Trofeo, мне очень приятно делать это в этом году, потому что уровень соревнований очень высок. Должен Обладатель кубка Lamborghini  добавил: «Здорово выиграть титул, спустя четыре года после последнего, а за это время произошло так много всего. Из-за COVID-19, а затем моей тяжелой аварии в Барселоне я не мог так много ездить в последние годы, поэтому я очень доволен своим возвращением. Сегодня утром была тяжелая гонка, но я справился».
+                сказать, сегодня было довольно легко, так как я все время контролировал ситуацию».
+              </p>
+            </blockquote>
+          </div>
+          <img src="images/quote.png" alt="" class="blog__quote-img">
+        </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <h3 class="footer__title">
+          Контакты
+        </h3>
+        <div class="footer__top">
+          <ul class="footer__info">
+            <li class="footer__info-item">
+              <dl>
+                <dt>ОБЩИЕ</dt>
+                <dd><a href="tel:+351282405600">+(351) 282 405 600</a></dd>
+                <dd><a href="tel:+351282405697"></a>+(351) 282 405 697</dd>
+                <dd><a href="mailto:info@autodromodoalgarve.com">info@autodromodoalgarve.com</a></dd>
+              </dl>
             </li>
-            <li class="social-list__item">
-              <a class="social-list__link" href="#">
-                <img class="social-list__icon" src="images/inst.svg" alt="" >
-              </a>
+            <li class="footer__info-item">
+              <dl>
+              <dt>БИЛЕТЫ</dt>
+              <dd><a href="tel:+351282405600">+(351) 282 405 600</a></dd>
+              <dd><a href="mailto:tickets@autodromodoalgarve.com">tickets@autodromodoalgarve.com</a></dd>
+            </dl>
             </li>
-            <li class="social-list__item">
-              <a class="social-list__link" href="#">
-                <img class="social-list__icon" src="images/facebook.svg" alt="" >
-              </a>
+            <li class="footer__info-item">
+              <ul class="social-list">
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#">
+                    <img class="social-list__icon" src="images/youtube.svg" alt="" >
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#">
+                    <img class="social-list__icon" src="images/inst.svg" alt="" >
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#">
+                    <img class="social-list__icon" src="images/facebook.svg" alt="" >
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
-        </li>
-      </ul>
-      <div class="footer__address">
-        <p class="footer__address-title">
-          АДРЕС
-        </p>
-        <address class="footer__address-text">
-          Sitio do Escampadinho, Mexilhoeira Grande, 8500-148 Portimao, Portugal
-        </address>
-        <div id="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d150506.36169936025!2d27.281569067059483!3d53.88443843818939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQuiwg0JzQuNC90YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sby!4v1701365130470!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="footer__address">
+            <p class="footer__address-title">
+              АДРЕС
+            </p>
+            <address class="footer__address-text">
+              Sitio do Escampadinho, Mexilhoeira Grande, 8500-148 Portimao, Portugal
+            </address>
+            <div id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d150506.36169936025!2d27.281569067059483!3d53.88443843818939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQuiwg0JzQuNC90YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sby!4v1701365130470!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <a class="footer__bottom-link" href="#">Design by Varvara Prokopchuk</a>
+          <a class="footer__logo" href="#">
+            <img class="footer__logo-img" src="images/logo_footer.svg" alt="logo">
+          </a>
+          <a  class="footer__bottom-link" href="#">Политика конфиденциальности</a>
         </div>
       </div>
-    </div>
-    <div class="footer__bottom">
-      <a class="footer__bottom-link" href="#">Design by Varvara Prokopchuk</a>
-      <a class="footer__logo" href="#">
-        <img class="footer__logo-img" src="images/logo_footer.svg" alt="logo">
-      </a>
-      <a  class="footer__bottom-link" href="#">Политика конфиденциальности</a>
-    </div>
-  </div>
-</footer>
+    </footer>
 
 
-<!--<script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})-->
-<!--({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly"});</script>-->
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+    ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly"});</script>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>

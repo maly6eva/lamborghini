@@ -1,44 +1,60 @@
-const menuBtn = document.querySelector('.menu-btn');
-const menuMobile = document.querySelector('.menu-mobile');
+// function openCity(evt, cityName) {
+//     let i, nuvcontent, nuvlinks;
+//     nuvcontent = document.getElementsByClassName('nuvcontent');
+//     for( i = 0; i < nuvcontent.length; i++) {
+//         nuvcontent[i].style.display = 'none';
+//     }
+//     nuvlinks = document.getElementsByClassName('nuvlinks');
+//     for( i = 0; i < nuvlinks.length; i++ ) {
+//         nuvlinks[i].className = nuvlinks[i].className.replace('active', '');
+//     }
+//     document.getElementById(cityName).style.display = 'block';
+//     evt.currentTarget.className += 'active';
+//
+// }
 
-menuBtn.addEventListener('click', () => {
-    menuMobile.clossList.toggle('menu--open');
-})
 
 
+function openCity(evt, cityName) {
+    // Declare all variables
+    var i, nuvcontent, nuvlinks;
 
-
-
-
-
-const swiper = new Swiper('.swiper', {
-    loop: true,
-
-    navigation: {
-        nextEl: '.swiper-button-right',
-        prevEl: '.swiper-button-left',
-    },
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        }
+    // Get all elements with class="tabcontent" and hide them
+    nuvcontent = document.getElementsByClassName("nuvcontent");
+    for (i = 0; i < nuvcontent.length; i++) {
+        nuvcontent[i].style.display = "none";
     }
-});
 
-let map;
+    // Get all elements with class="tablinks" and remove the class "active"
+    nuvlinks = document.getElementsByClassName("nuvlinks");
+    for (i = 0; i < nuvlinks.length; i++) {
+        nuvlinks[i].className = nuvlinks[i].className.replace(" active", "");
+    }
 
-async function initMap() {
-    //@ts-ignore
-    const { Map } = await google.maps.importLibrary("maps");
-
-    map = new Map(document.getElementById("map"), {
-        center: { lat: -34.397, lng: 150.644 },
-        zoom: 8,
-    });
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
 }
 
-initMap();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
