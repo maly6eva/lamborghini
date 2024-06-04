@@ -36,13 +36,20 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 
+
+
+
+
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
-function piusSlides(n) {
+function plusSlides(n) {
     showSlides(slideIndex += n);
 }
-
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
