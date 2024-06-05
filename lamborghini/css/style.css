@@ -27,16 +27,16 @@ img {
 }
 .big-container {
 
-    max-width: 1220px;
+    max-width: 1024px;
     padding: 0 10px;
     margin: 0 auto; /*блоки с шириной по центру: сверху снизу по 0, с боков пропорционально, чтобы блок стоял по центру*/
 }
 
 .container {
     position: relative;
-    /*max-width: 920px;*/
-    /*padding: 0 10px;*/
-    /*margin: 0 auto*/
+    max-width: 920px;
+    padding: 0 10px;
+    margin: 0 auto
 }
 
 body {
@@ -162,6 +162,7 @@ body {
 .mySlides {
     display: none;
     position: relative;
+
 }
 
 .numbertext {
@@ -182,20 +183,30 @@ body {
     color: white;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+.minicard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    margin: 5px 0 300px;
+    flex-wrap: wrap;
+    gap: 5px;
 
+}
 .column {
-    float: left;
-    width: 36.66%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 300px;
+    /*width: 26.66%;*/
 
 }
+
 
 .demo-cursor {
-    opacity: 0.6;
+    opacity: 0.8;
+    width: calc(13.333% - 10px);
+    height: auto;
 }
 
 .active,
@@ -221,7 +232,7 @@ body {
     .title {
         font-family: 'Impact', sans-serif;
         font-weight: 400;
-        font-size: 76px;
+        font-size: 56px;
         letter-spacing: 0.08em;
         margin-bottom: 10px;
     }
