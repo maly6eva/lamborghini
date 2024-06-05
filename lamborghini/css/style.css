@@ -22,21 +22,9 @@ a {
 li{
     list-style: none;
 }
+
 img {
     max-width: 100%;
-}
-.big-container {
-
-    max-width: 1024px;
-    padding: 0 10px;
-    margin: 0 auto; /*блоки с шириной по центру: сверху снизу по 0, с боков пропорционально, чтобы блок стоял по центру*/
-}
-
-.container {
-    position: relative;
-    max-width: 920px;
-    padding: 0 10px;
-    margin: 0 auto
 }
 
 body {
@@ -47,6 +35,8 @@ body {
     color: #0e0e0e;
 }
 
+/*//шапка*/
+
 .header {
     padding-top: 25px;
     position: absolute;
@@ -55,16 +45,18 @@ body {
     background: #ceae14;
 
 }
+.big-container {
+    max-width: 1024px;
+    padding: 0 10px;
+    margin: 0 auto; /*блоки с шириной по центру: сверху снизу по 0, с боков пропорционально, чтобы блок стоял по центру*/
+}
 
 .nuv {
     display: flex;
     justify-content: space-between;
-        overflow: hidden;
-        /*border: 1px solid #418030;*/
-        /*background-color: #46703a;*/
-
-
+    overflow: hidden;
 }
+
 .nuv button{
     background-color: inherit;
     float: left;
@@ -78,10 +70,29 @@ body {
     background-color: #f3f006;
 }
 
-/* Create an active/current tablink class */
 .nuv button.active {
     background-color: #9b9916;
 }
+
+.menu-left {
+    padding-left: 25px;
+}
+
+.menu-right {
+    padding-right: 80px;
+}
+
+.menu-list {
+    display: flex;
+    gap: 0 40px;
+    padding-top: 25px;
+}
+
+.nuvlinks {
+    font-family: 'Impact', sans-serif;
+    font-size: 18px;
+}
+
 .nuvcontent {
     display: none;
     padding: 6px 12px;
@@ -93,39 +104,77 @@ body {
     line-height: 1.2;
 }
 
-.nuvlinks {
-    font-family: 'Impact', sans-serif;
-    font-size: 18px;
-
-}
 
 
-.menu-left {
-    padding-left: 25px;
-}
-
-.menu-right {
-    padding-right: 80px;
-}
-.menu-list {
-    display: flex;
-    gap: 0 40px;
-    padding-top: 25px;
-}
-
-
+/*надпись*/
 
 .main {
-
     background: linear-gradient(0.25turn,  #ebf8e1, #ceae14, #ebf8e1);
 }
 
-
-
-.demo-cursor {
-    cursor: pointer;
+.promo {
+    background-repeat: no-repeat;
+    background-size: cover; /*на весь экран */
+    background-position: center;
 }
 
+.promo__inner {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 210px;
+}
+
+.title {
+    font-family: 'Impact', sans-serif;
+    font-weight: 400;
+    font-size: 56px;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-family: 'Impact', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    border-bottom: 1px solid #2d651d;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.sub {
+    display: block;
+    font-size: 34px;
+    color: #9F6B08;
+    padding: 10px 0;
+}
+
+.promo__text {
+    font-size: 26px;
+    color: #363636;
+}
+
+
+/*большой слайдер*/
+
+.mySlides {
+    display: none;
+    position: relative;
+
+}
+
+.numbertext {
+    color: #ecda00;
+    font-size: 30px;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*-кнопки предыдущ.след*/
 .nav {
     cursor: pointer;
     position: absolute;
@@ -155,34 +204,20 @@ body {
 .next:hover {
     background-color: rgb(201, 197, 190);
     opacity: 0.5;
-
-
 }
 
-.mySlides {
-    display: none;
-    position: relative;
 
-}
-
-.numbertext {
-    color: #fafafa;
-    font-size: 30px;
-    padding: 20px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-
-}
+/*подпись к картинке*/
 
 .caption-container {
+    font-size: 34px;
     text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
+    background-color: #796f6f;
+    padding: 20px 66px;
+    color: #e8ca39;
 }
 
+/*миниатюрная картинка*/
 .minicard {
     display: flex;
     justify-content: center;
@@ -191,19 +226,20 @@ body {
     margin: 5px 0 300px;
     flex-wrap: wrap;
     gap: 5px;
-
 }
+
 .column {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     max-width: 300px;
+    /*overflow: hidden;*/
     /*width: 26.66%;*/
-
 }
 
 
 .demo-cursor {
+    cursor: pointer;
     opacity: 0.8;
     width: calc(13.333% - 10px);
     height: auto;
@@ -214,47 +250,37 @@ body {
     opacity: 1;
 }
 
-.promo {
-        background-repeat: no-repeat;
-        background-size: cover; /*на весь экран */
-        background-position: center;
-    }
+.indicators {
+    position: absolute;
+}
+.indicator {
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
 
-    .promo__inner {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        text-align: center;
-        padding-top: 210px;
+.indicator.active {
+    background: rgba(255, 255, 255, 0.9);
+}
 
-    }
 
-    .title {
-        font-family: 'Impact', sans-serif;
-        font-weight: 400;
-        font-size: 56px;
-        letter-spacing: 0.08em;
-        margin-bottom: 10px;
-    }
-    .subtitle {
-        font-family: 'Impact', sans-serif;
-        font-weight: 400;
-        font-size: 48px;
-        border-bottom: 1px solid #2d651d;
-        margin-bottom: 10px;
-        align-self: center;
-    }
-    .sub {
-        display: block;
-        font-size: 34px;
-        color: #9F6B08;
-        padding: 10px 0;
-    }
 
-    .promo__text {
-        font-size: 16px;
-        color: #363636;
-    }
+
+
+
+
+
+
+/*.container {*/
+/*    position: relative;*/
+/*    max-width: 920px;*/
+/*    padding: 0 10px;*/
+/*    margin: 0 auto*/
+/*}*/
 
     /*.promo__arrow {*/
     /*    margin-top: auto;*/

@@ -70,6 +70,46 @@ function showSlides(n) {
 
 
 
+let currentIndex = 0;
+const column = document.querySelectorAll('.column')
+const indicators = document.querySelectorAll('.indicator');
+const totalSlides = Math.ceil(column.length / 3);
+
+function showSlide(index) {
+    if(index < 0) {
+        currentIndex = totalSlides - 1;
+    } else if (index >= totalSlides) {
+        currentIndex = 0;
+    } else {
+        currentIndex = index;
+    }
+
+    const offset = -currentIndex * 100 / totalSlides;
+    document.querySelector('.column').style.transform = `translateX(${offset}%)`;
+
+    indicators.forEach((indicator, idx) => {
+        indicator.classList.toggle('active', idx === currentIndex);
+    });
+}
+
+function nextSlide() {
+    showSlide(currentIndex + 1);
+}
+
+let slideInterval = setInterval(nextSlide, 7000);
+
+indicators.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+        showSlide(index);
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, 7000);
+    });
+});
+
+showSlide(currentIndex);
+
+
+
 
 
 
