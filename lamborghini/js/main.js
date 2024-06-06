@@ -69,51 +69,162 @@ function showSlides(n) {
 }
 
 
+//
+// let currentIndex = 0;
+// const column = document.querySelectorAll('.column')
+// const indicators = document.querySelectorAll('.indicator');
+// const totalSlides = Math.ceil(column.length / 3);
+//
+// function showSlide(index) {
+//     if(index < 0) {
+//         currentIndex = totalSlides - 1;
+//     } else if (index >= totalSlides) {
+//         currentIndex = 0;
+//     } else {
+//         currentIndex = index;
+//     }
+//
+//     const offset = -currentIndex * 100 / totalSlides;
+//     document.querySelector('.column').style.transform = `translateX(${offset}%)`;
+//
+//     indicators.forEach((indicator, idx) => {
+//         indicator.classList.toggle('active', idx === currentIndex);
+//     });
+// }
+//
+// function nextSlide() {
+//     showSlide(currentIndex + 1);
+// }
+//
+// let slideInterval = setInterval(nextSlide, 7000);
+//
+// indicators.forEach((indicator, index) => {
+//     indicator.addEventListener('click', () => {
+//         showSlide(index);
+//         clearInterval(slideInterval);
+//         slideInterval = setInterval(nextSlide, 7000);
+//     });
+// });
+//
+// console.log(showSlide(currentIndex));
 
-let currentIndex = 0;
-const column = document.querySelectorAll('.column')
-const indicators = document.querySelectorAll('.indicator');
-const totalSlides = Math.ceil(column.length / 3);
 
-function showSlide(index) {
-    if(index < 0) {
-        currentIndex = totalSlides - 1;
-    } else if (index >= totalSlides) {
-        currentIndex = 0;
-    } else {
-        currentIndex = index;
+// function imageZoom(imgID, resultID) {
+//     let img, lens, result, cx, cy;
+//     img = document.getElementById(imgID);
+//     result = document.getElementById(resultID);
+//
+//     lens = document.createElement("DIV");
+//     lens.setAttribute("class", "img-zoom-lens");
+//
+//     img.parentElement.insertBefore(lens, img);
+//
+//     cx = result.offsetWidth / lens.offsetWidth;
+//     cy = result.offsetHeight / lens.offsetHeight;
+//
+//     result.style.backgroundImage = "url('" + img.src + "')";
+//     result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) +"px";
+//
+//     lens.addEventListener("mousemove", moveLens);
+//     img.addEventListener("mousemove", moveLens);
+// }
+//  function moveLens(e) {
+//     let pos, x, y;
+//     e.preventDefault();
+//     pos = getCursorPos(e);
+//
+//     x = pos.x -(lens.offsetWidth / 2);
+//     y= pos.y -(lens.offsetWidth / 2);
+//
+//     if (x > img.width - lens.offsetWidth) {
+//         x = img.width - lens.offsetWidth;
+//     }
+//     if (x < 0) {
+//         x = 0;
+//     }
+//     lens.style.left = x + "px";
+//     lens.style.top = y + "px";
+//     result.style.backgroundPosition = "-" + (x * cx) + "px-" + (y * cy) + "px";
+//  }
+//
+//  function getCursorPos(e) {
+//      let a, x = 0, y = 0;
+//      e = e || window.event;
+//      a = img.getBoundingClientRect();
+//      x = e.pageX - a.left;
+//      y = e.pageY - a.top;
+//
+//      x = x - window.pageXOffset;
+//      y = y - window.pageYOffset;
+//      return {
+//          x: x, y: y
+//      };
+//
+//  }
+// imageZoom("myimage", "myresult");
+
+
+
+function imageZoom(imgID, resultID) {
+    let img, lens, result, cx, cy;
+    img = document.getElementById(imgID);
+    result = document.getElementById(resultID);
+
+    lens = document.createElement("DIV");
+    lens.setAttribute("class", "img-zoom-lens");
+
+    img.parentElement.insertBefore(lens, img);
+
+    cx = result.offsetWidth / lens.offsetWidth;
+    cy = result.offsetHeight / lens.offsetHeight;
+
+    result.style.backgroundImage = "url('" + img.src + "')";
+    result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+
+    lens.addEventListener("mousemove", moveLens);
+    img.addEventListener("mousemove", moveLens);
+
+    lens.addEventListener("touchmove", moveLens);
+    img.addEventListener("touchmove", moveLens);
+
+    function moveLens(e) {
+        let pos, x, y;
+
+        e.preventDefault();
+
+        pos = getCursorPos(e);
+
+        x = pos.x - (lens.offsetWidth / 2);
+        y = pos.y - (lens.offsetHeight / 2);
+
+        if (x > img.width - lens.offsetWidth) { x = img.width - lens.offsetWidth; }
+        if (x < 0) { x = 0; }
+        if (y > img.height - lens.offsetHeight) { y = img.height - lens.offsetHeight; }
+        if (y < 0) { y = 0; }
+
+        lens.style.left = x + "px";
+        lens.style.top = y + "px";
+
+        result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
     }
 
-    const offset = -currentIndex * 100 / totalSlides;
-    document.querySelector('.column').style.transform = `translateX(${offset}%)`;
+    function getCursorPos(e) {
+        let a, x = 0, y = 0;
+        e = e || window.event;
 
-    indicators.forEach((indicator, idx) => {
-        indicator.classList.toggle('active', idx === currentIndex);
-    });
+        a = img.getBoundingClientRect();
+
+        x = e.pageX - a.left;
+        y = e.pageY - a.top;
+
+        x = x - window.pageXOffset;
+        y = y - window.pageYOffset;
+        return { x: x, y: y };
+    }
 }
 
-function nextSlide() {
-    showSlide(currentIndex + 1);
-}
 
-let slideInterval = setInterval(nextSlide, 7000);
-
-indicators.forEach((indicator, index) => {
-    indicator.addEventListener('click', () => {
-        showSlide(index);
-        clearInterval(slideInterval);
-        slideInterval = setInterval(nextSlide, 7000);
-    });
-});
-
-showSlide(currentIndex);
-
-
-
-
-
-
-
+imageZoom("myimage", "myresult");
 
 
 
