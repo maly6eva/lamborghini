@@ -69,9 +69,9 @@ function showSlides(n) {
 }
 
 
-//
+
 // let currentIndex = 0;
-// const column = document.querySelectorAll('.column')
+// const column = document.querySelectorAll('.demo-cursor')
 // const indicators = document.querySelectorAll('.indicator');
 // const totalSlides = Math.ceil(column.length / 3);
 //
@@ -96,72 +96,20 @@ function showSlides(n) {
 //     showSlide(currentIndex + 1);
 // }
 //
-// let slideInterval = setInterval(nextSlide, 7000);
+// let slideInterval = setInterval(nextSlide, 1000);
 //
 // indicators.forEach((indicator, index) => {
 //     indicator.addEventListener('click', () => {
 //         showSlide(index);
 //         clearInterval(slideInterval);
-//         slideInterval = setInterval(nextSlide, 7000);
+//         slideInterval = setInterval(nextSlide, 1000);
 //     });
 // });
 //
-// console.log(showSlide(currentIndex));
+// showSlide(currentIndex)
 
 
-// function imageZoom(imgID, resultID) {
-//     let img, lens, result, cx, cy;
-//     img = document.getElementById(imgID);
-//     result = document.getElementById(resultID);
-//
-//     lens = document.createElement("DIV");
-//     lens.setAttribute("class", "img-zoom-lens");
-//
-//     img.parentElement.insertBefore(lens, img);
-//
-//     cx = result.offsetWidth / lens.offsetWidth;
-//     cy = result.offsetHeight / lens.offsetHeight;
-//
-//     result.style.backgroundImage = "url('" + img.src + "')";
-//     result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) +"px";
-//
-//     lens.addEventListener("mousemove", moveLens);
-//     img.addEventListener("mousemove", moveLens);
-// }
-//  function moveLens(e) {
-//     let pos, x, y;
-//     e.preventDefault();
-//     pos = getCursorPos(e);
-//
-//     x = pos.x -(lens.offsetWidth / 2);
-//     y= pos.y -(lens.offsetWidth / 2);
-//
-//     if (x > img.width - lens.offsetWidth) {
-//         x = img.width - lens.offsetWidth;
-//     }
-//     if (x < 0) {
-//         x = 0;
-//     }
-//     lens.style.left = x + "px";
-//     lens.style.top = y + "px";
-//     result.style.backgroundPosition = "-" + (x * cx) + "px-" + (y * cy) + "px";
-//  }
-//
-//  function getCursorPos(e) {
-//      let a, x = 0, y = 0;
-//      e = e || window.event;
-//      a = img.getBoundingClientRect();
-//      x = e.pageX - a.left;
-//      y = e.pageY - a.top;
-//
-//      x = x - window.pageXOffset;
-//      y = y - window.pageYOffset;
-//      return {
-//          x: x, y: y
-//      };
-//
-//  }
-// imageZoom("myimage", "myresult");
+
 
 
 
